@@ -4,6 +4,10 @@
         <%= camp.title %> -
             <%= camp.location %>
     </h2>
+    <img src="<%= camp.image %> " alt="">
+    <p>
+        <%= camp.description %>
+    </p>
     <form action="/campgrounds/<%= camp._id %>?_method=DELETE" method="post">
         <button>Delete</button>
     </form>
